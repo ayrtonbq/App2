@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:id="@+id/layoutPrincipal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/etNome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Qual o seu nome?"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/etDataNascimento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:hint="Qual sua data de nascimento?"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Qual seu melhor e-mail?"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/etTelefone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:hint="Qual o seu telefone?"
+                    android:inputType="phone"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/tvSatisfacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Qual o seu grau de satisfação com o nosso produto?"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <RadioGroup
+                    android:id="@+id/rgSatisfacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbSatisfacao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSatisfacao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSatisfacao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSatisfacao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSatisfacao5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvIndicacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Você indicaria o nosso produto?"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <RadioGroup
+                    android:id="@+id/rgIndicacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbIndicacao1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbIndicacao2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbIndicacao3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/black" />>
+
+                    <RadioButton
+                        android:id="@+id/rbIndicacao4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbIndicacao5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvUtilidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Qual o grau de utilidade que você classifica nosso produto?"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />/>
+
+                <RadioGroup
+                    android:id="@+id/rgUtilidade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbUtilidade1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbUtilidade2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbUtilidade3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbUtilidade4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4"
+                        android:textColor="@android:color/black" />
+
+                    <RadioButton
+                        android:id="@+id/rbUtilidade5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="5"
+                        android:textColor="@android:color/black" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvPontosDestaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Quais os pontos que você acredita que nosso produto se destaca:"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="2">
+
+                    <CheckBox
+                        android:id="@+id/cbRobustez"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robustez"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbAgilidade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Agilidade"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbInovacao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inovação"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbLentidao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lentidão"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbIneficiencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ineficiencia"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbProdutividade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Produtividade"
+                        android:textColor="@android:color/black" />
+
+                    <CheckBox
+                        android:id="@+id/cbBurocracia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burocracia"
+                        android:textColor="@android:color/black" />
+
+                </GridLayout>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConfirmar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:id="@+id/layoutConfirmacao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:gravity="center"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:id="@+id/tvRespostas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Respostas aqui"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="24dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnVoltar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Voltar"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@android:color/black" />
+
+                <Button
+                    android:id="@+id/btnFinalizar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Finalizar"
+                    android:textColor="@android:color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
